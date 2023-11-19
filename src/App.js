@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+import Header from './layout/Header';
+import Hero from './layout/Hero';
+import Advocate from './layout/Advocate';
+import Events from './layout/Events';
+import TabNav from './components/TabNav';
+import styled from 'styled-components';
 import './App.css';
 
 function App() {
+  const SectionWrapper = styled.section`
+    height: 100%;
+  `
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <SectionWrapper>
+        <Header />
+        <Hero /> 
+      </SectionWrapper>   
+      <Advocate />
+      <Events />
+      <TabNav />    
+      <div className='u-container'>
+        
+      </div>
+    </>
   );
 }
 
