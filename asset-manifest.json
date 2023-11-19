@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/campaign-os/static/css/main.843f63a1.css",
+    "main.js": "/campaign-os/static/js/main.42c35a30.js",
+    "static/js/787.78081601.chunk.js": "/campaign-os/static/js/787.78081601.chunk.js",
+    "index.html": "/campaign-os/index.html",
+    "main.843f63a1.css.map": "/campaign-os/static/css/main.843f63a1.css.map",
+    "main.42c35a30.js.map": "/campaign-os/static/js/main.42c35a30.js.map",
+    "787.78081601.chunk.js.map": "/campaign-os/static/js/787.78081601.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.843f63a1.css",
+    "static/js/main.42c35a30.js"
+  ]
+}
