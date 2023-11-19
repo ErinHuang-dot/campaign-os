@@ -82,7 +82,7 @@ export default function Hero() {
       margin-right: var(--space-l);
     }
   `
-
+  const URL = process.env.PUBLIC_URL;
   return (
     <Wrapper>
       <Title>
@@ -94,8 +94,8 @@ export default function Hero() {
         <p><span>{ data.Intro.no }</span>{ data.Intro.name }</p>
       </Subtitle>
       <ImgWrapper>
-        <img src={ data.Intro.img1 } />
-        <img src={ data.Intro.img2 }/>
+        <img src={ URL + data.Intro.img1 } />
+        <img src={ URL + data.Intro.img2 }/>
       </ImgWrapper>
       <SloganWrapper>
         { data.Intro.slogan.map((item,i) => {

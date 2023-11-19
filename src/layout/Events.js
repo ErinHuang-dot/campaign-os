@@ -52,7 +52,7 @@ export default function Events() {
     }
   `
 
-
+  const URL = process.env.PUBLIC_URL;
   return (
     <Section>
       <div className='u-container'>

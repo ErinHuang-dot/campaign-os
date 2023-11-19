@@ -33,18 +33,18 @@ export default function Header() {
       margin-right: 16px;
     }
   `
-
+  const URL = process.env.PUBLIC_URL;
   return (
     <Wrapper>
       <LogoWrapper>
-        <img src={data.Header.logo.img} />
+        <img src={URL + data.Header.logo.img} />
         <h1>{data.Header.logo.title}</h1>
       </LogoWrapper>
       <Nav />
       <SocialIconList>
         { data.Header.socialIcon.map( (item,i) => {
           return (
-            <li key={i}><a><img src={ item }/></a></li>
+            <li key={i}><a><img src={ URL + item }/></a></li>
           )
         })}
       </SocialIconList>

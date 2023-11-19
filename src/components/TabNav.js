@@ -27,13 +27,14 @@ export default function TabNav() {
       display: none;
     }
 `
+  const URL = process.env.PUBLIC_URL;
   return (
     <TabNavList>
       { data.tabNavList.map( (item, i) => {
         return (
           <li key={i}>
             <a href={`#${item.id}`} title={item.id} target=''>
-              <img src={ item.img }/>
+              <img src={ URL + item.img }/>
               <p>{ item.title }</p>
             </a>
           </li>

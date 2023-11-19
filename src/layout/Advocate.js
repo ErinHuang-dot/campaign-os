@@ -44,6 +44,7 @@ export default function Advocate() {
       width: 50%;
     }
   `
+  const URL = process.env.PUBLIC_URL;
   return (
     <Section>
       <div className='u-container'>
@@ -55,7 +56,7 @@ export default function Advocate() {
             <p>{ data.Advocate.content2 }</p>
           </TextWrapper>
           <ImgWrapper>
-            <img src={ data.Advocate.img } alt={ data.Advocate.title }/>
+            <img src={ URL + data.Advocate.img } alt={ data.Advocate.title }/>
           </ImgWrapper>
         </Wrapper>       
       </div>
