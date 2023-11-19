@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../constants/Breakpoint';
+import { URL } from '../constants/FilePath';
 
 export default function InfoCards({title, content, date, img, feature}) {
   const Wrapper = styled.div`
@@ -42,7 +43,7 @@ export default function InfoCards({title, content, date, img, feature}) {
   return (
     <>
       <ImgWrapper feature={ feature }>
-        <img src={ img } alt={ title }/>
+        <img src={URL + img} alt={ title }/>
       </ImgWrapper>
       <ContentWrapper feature={ feature }>
         <span>{ date }</span>
