@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { MEDIA_QUERY_LG } from '../constants/Breakpoint';
+import { URL } from '../constants/FilePath';
 import data from '../data/data.json';
 
 export default function Hero() {
@@ -10,6 +11,7 @@ export default function Hero() {
   const Title = styled.div`
     font-family: 'Dela Gothic One', sans-serif;
     font-size: var(--step-7);
+    line-height: 1.2;
     background-image: var(--primary-gradient);
     background-clip: text;
     -webkit-background-clip: text;
@@ -17,6 +19,7 @@ export default function Hero() {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 1rem;
 
     ${MEDIA_QUERY_LG} {
       h2 {
@@ -31,6 +34,7 @@ export default function Hero() {
     font-size: var(--step-4);
     font-weight: 700;
     color: var(--primary-theme1);
+    margin-bottom: 1rem;
 
     p:first-of-type {
       padding: var(--space-xs) var(--space-s);
@@ -82,7 +86,7 @@ export default function Hero() {
       margin-right: var(--space-l);
     }
   `
-  const URL = process.env.PUBLIC_URL;
+
   return (
     <Wrapper>
       <Title>

@@ -25,7 +25,7 @@ export default function MoreLink({children}) {
   return (
     <LinkWrapper>
       <a href='#' title='前往更多活動'>查看更多
-        <span class="material-symbols-outlined">arrow_forward</span>
+        <span className='material-symbols-outlined'>arrow_forward</span>
       </a>
     </LinkWrapper>
   )

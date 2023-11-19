@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Nav from '../components/Nav';
 import data from '../data/data.json';
+import { URL } from '../constants/FilePath';
 
 export default function Header() {
   const Wrapper = styled.div`
@@ -11,6 +12,10 @@ export default function Header() {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgba(255, 255, 255, .9);
+    position: sticky;
+    top: 0;
+    z-index: 50;
   `
   const LogoWrapper = styled.div`
     display: flex;
@@ -33,7 +38,7 @@ export default function Header() {
       margin-right: 16px;
     }
   `
-  const URL = process.env.PUBLIC_URL;
+
   return (
     <Wrapper>
       <LogoWrapper>
@@ -44,7 +49,7 @@ export default function Header() {
       <SocialIconList>
         { data.Header.socialIcon.map( (item,i) => {
           return (
-            <li key={i}><a><img src={ URL + item }/></a></li>
+            <li key={i}><a href='#'><img src={ URL + item }/></a></li>
           )
         })}
       </SocialIconList>

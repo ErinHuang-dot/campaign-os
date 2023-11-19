@@ -51,10 +51,9 @@ export default function Events() {
       margin-bottom: 1.5rem
     }
   `
-
-  const URL = process.env.PUBLIC_URL;
+  
   return (
-    <Section>
+    <section className='sec-p-block' id='event'>
       <div className='u-container'>
         <div>
           <SectionTitle tag={ data.Events.tag } title={ data.Events.title }/>
@@ -80,14 +79,13 @@ export default function Events() {
                       img={ item.img}
                        />
                     </li>
-                  ) 
-                )}
+                  ))}
               </ul>
               <MoreLink>查看更多</MoreLink>
             </Posts>  
           </ContentWrapper>         
         </div>
       </div>
-    </Section>
+    </section>
   )
 }

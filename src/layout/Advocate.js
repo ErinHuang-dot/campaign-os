@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { MEDIA_QUERY_LG } from '../constants/Breakpoint';
+import { URL } from '../constants/FilePath';
 import SectionTitle from '../components/SectionTitle';
 import data from '../data/data.json';
 
@@ -44,9 +45,9 @@ export default function Advocate() {
       width: 50%;
     }
   `
-  const URL = process.env.PUBLIC_URL;
+
   return (
-    <Section>
+    <Section id='advocate'>
       <div className='u-container'>
         <Wrapper>
           <TextWrapper>

@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { MEDIA_QUERY_LG } from '../constants/Breakpoint';
 
 const GlobalStyles = createGlobalStyle`
   :root {
@@ -61,6 +62,13 @@ const GlobalStyles = createGlobalStyle`
     gap: var(--grid-gutter);
   }
 
+  .sec-p-block {
+    padding-block: 4rem;
+
+    ${MEDIA_QUERY_LG} {
+      padding-block: 6.5rem;
+    }
+  }
   .material-symbols-outlined {
     font-variation-settings:
     'FILL' 0,

@@ -1,6 +1,26 @@
 {
   "Header": {
     "navList": [
+      {
+        "id":"advocate",
+        "title":"候選人主張"
+      },
+      {
+        "id":"event",
+        "title":"最新活動"
+      },
+      {
+        "id":"issue",
+        "title":"政策議題"
+      },
+      {
+        "id":"feedback",
+        "title":"小額捐款"
+      },
+      {
+        "id":"feedback",
+        "title":"服務信箱"
+      },
       "候選人主張",
       "最新活動",
       "政策議題",
@@ -106,34 +126,43 @@
   "Policy": {
     "title": "政策議題",
     "tag": "POLICY ISSUES",
-    "issue1": {
-      "title": "為毛孩子謀福利！",
-      "content": "推動寵物醫療保障方案",
-      "img": "/images/img-issue1.png"
-    },
-    "issue2": {
-      "title": "打造休閒天堂！",
-      "content": "推廣寵物休閒與娛樂場所",
-      "img": "/images/img-issue2.png"
-    },
-    "issue3": {
-      "title": "推廣寵物飼養教育，讓愛更加專業",
-      "content": "",
-      "img": "/images/img-issue3.png"
-    }
+    "issues": [
+      {
+        "id": "issue01",
+        "title1": "為毛孩子謀福利！",
+        "title2": "推動寵物醫療保障方案",
+        "img": "/images/img-issue1.png"
+      },
+      {
+        "id": "issue02",
+        "title1": "打造休閒天堂！",
+        "title2": "推廣寵物休閒與娛樂場所",
+        "img": "/images/img-issue2.png"
+      },
+      {
+        "id": "issue03",
+        "title1": "推廣寵物飼養教育！",
+        "title2": "讓愛更加專業",
+        "img": "/images/img-issue3.png"
+      }
+    ]
   },
-  "Feedback": {
-    "plan1": {
-      "title": "小額支持喵喵",
+  "Feedback": [
+    {
+      "id": "plan1",
+      "title": "小額支持口苗",
       "content": "您的小筆捐款，是每隻毛孩未來的大大動力！",
+      "link": "小額捐款",
       "img": "/images/img-donate.png"
     },
-    "plan2": {
-      "title": "民眾服務信箱",
+    {
+      "id": "plan2",
+      "title": "為民服務信箱",
       "content": "親愛的鄉親，每一位市民的意見都是我們社區前進的原動力",
+      "link": "填寫表單",
       "img": ""
     }
-  },
+  ],
   "Footer": {
     "title": "競選總部",
     "address": "辦公室地址：喵星區，毛茸茸大道88號，喵喵大樓3樓",
